@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/ivProfileImage"
-            android:text="Name"
+            android:text="@string/name"
             android:textSize="16sp"/>
 
         <TextView
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/tvName"
             android:layout_below="@id/tvName"
-            android:text="TagLine"
+            android:text="@string/tag_line"
             android:textSize="12sp"/>
 
     </RelativeLayout>
@@ -50,14 +50,14 @@
             android:id="@+id/tvFollowers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5 Followers"/>
+            android:text="@string/followers"/>
 
         <TextView
             android:id="@+id/tvFollowing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="5 Following"/>
+            android:text="@string/following"/>
 
     </LinearLayout>
 

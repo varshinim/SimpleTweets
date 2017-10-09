@@ -5,7 +5,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.codepath.apps.restclienttemplate.fragments.OtherUserTimelineFragment;
+import com.codepath.apps.restclienttemplate.fragments.FavoritesFragment;
 import com.codepath.apps.restclienttemplate.fragments.OtherUserTweetsListFragment;
 
 public class OtherUserTweetPagerAdapter extends FragmentPagerAdapter {
@@ -32,7 +32,7 @@ public class OtherUserTweetPagerAdapter extends FragmentPagerAdapter {
         if(position == 0) {
             return OtherUserTweetsListFragment.newInstance(screenName);
         } else if(position == 1){
-            return OtherUserTimelineFragment.newInstance(screenName);
+            return FavoritesFragment.newInstance(screenName);
         } else {
             return null;
         }

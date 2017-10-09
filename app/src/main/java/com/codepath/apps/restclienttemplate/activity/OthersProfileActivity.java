@@ -1,7 +1,6 @@
 package com.codepath.apps.restclienttemplate.activity;
 
 import android.support.design.widget.TabLayout;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,10 +13,6 @@ import com.codepath.apps.restclienttemplate.R;
 import com.codepath.apps.restclienttemplate.TwitterApp;
 import com.codepath.apps.restclienttemplate.TwitterClient;
 import com.codepath.apps.restclienttemplate.adapters.OtherUserTweetPagerAdapter;
-import com.codepath.apps.restclienttemplate.adapters.TweetsPagerAdapter;
-import com.codepath.apps.restclienttemplate.fragments.OtherUserTimelineFragment;
-import com.codepath.apps.restclienttemplate.fragments.OtherUserTweetsListFragment;
-import com.codepath.apps.restclienttemplate.fragments.UserTimelineFragment;
 import com.codepath.apps.restclienttemplate.models.User;
 import com.loopj.android.http.JsonHttpResponseHandler;
 

@@ -55,9 +55,9 @@ public class TimelineActivity extends AppCompatActivity implements TweetsListFra
         // Make sure the toolbar exists in the activity and is not null
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-        //getSupportActionBar().setDisplayShowHomeEnabled(true);
-        //getSupportActionBar().setLogo(R.drawable.twitter_icon);
-        //getSupportActionBar().setDisplayUseLogoEnabled(true);
+        // getSupportActionBar().setDisplayShowHomeEnabled(true);
+        // getSupportActionBar().setLogo(R.drawable.twitter_icon);
+        // getSupportActionBar().setDisplayUseLogoEnabled(true);
 
         client = TwitterApp.getRestClient();
         getUser();

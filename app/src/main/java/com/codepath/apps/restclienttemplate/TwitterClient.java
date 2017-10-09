@@ -54,7 +54,7 @@ public class TwitterClient extends OAuthBaseClient {
 		client.get(apiUrl, params, handler);
 	}
 
-	public void getOtherUserHomeTimeline(String screenname, long maxId,AsyncHttpResponseHandler handler) {
+	public void getFavorites(String screenname, long maxId,AsyncHttpResponseHandler handler) {
 		String apiUrl = getApiUrl("favorites/list.json");
 		// Can specify query string params directly or through RequestParams.
 		RequestParams params = new RequestParams();

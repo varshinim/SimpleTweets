@@ -12,6 +12,11 @@
         android:layout_height="wrap_content"
         app:titleTextColor="@android:color/white"
         android:background="?attr/colorPrimary">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/twitter_icon"/>
     </android.support.v7.widget.Toolbar>
 
 </LinearLayout>

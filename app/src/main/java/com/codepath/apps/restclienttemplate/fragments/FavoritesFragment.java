@@ -18,13 +18,13 @@ import org.json.JSONObject;
 
 import cz.msebera.android.httpclient.Header;
 
-public class OtherUserTimelineFragment extends TweetsListFragment {
+public class FavoritesFragment extends TweetsListFragment {
 
     TwitterClient client;
     private InfiniteScrollListener scrollListener;
 
-    public static OtherUserTimelineFragment newInstance(String screenName){
-        OtherUserTimelineFragment otherUserTimelineFragment = new OtherUserTimelineFragment();
+    public static FavoritesFragment newInstance(String screenName){
+        FavoritesFragment otherUserTimelineFragment = new FavoritesFragment();
         Bundle args = new Bundle();
         args.putString("screen_name", screenName);
         otherUserTimelineFragment.setArguments(args);
@@ -70,7 +70,7 @@ public class OtherUserTimelineFragment extends TweetsListFragment {
         String screenName = getArguments().getString("screen_name");
         Log.d("Out_screenname", screenName);
         long maxId = tweets != null && !tweets.isEmpty() ? tweets.get(tweets.size()-1).getUid(): -1;
-        client.getOtherUserHomeTimeline(screenName, maxId, new JsonHttpResponseHandler(){
+        client.getFavorites(screenName, maxId, new JsonHttpResponseHandler(){
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 //Log.d("TwitterClient", response.toString());
