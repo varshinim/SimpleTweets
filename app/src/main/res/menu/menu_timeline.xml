@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/miProfile"
+        android:orderInCategory="200"
+        android:icon="@drawable/ic_person_white_24dp"
+        android:onClick="onProfileView"
+        android:title="Item"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/compose"
+        android:orderInCategory="100"
+        android:title="Compose"
+        android:icon="@drawable/compose_icon"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+
+</menu>
