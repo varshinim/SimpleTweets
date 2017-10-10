@@ -26,6 +26,16 @@
         android:layout_alignStart="@+id/tvBody"/>
 
     <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name"
+        android:layout_alignBottom="@+id/tvTimeStamp"
+        android:layout_toStartOf="@+id/tvTimeStamp"
+        android:layout_marginEnd="55dp"
+        android:layout_alignTop="@+id/tvUserName" />
+
+    <TextView
         android:id="@+id/tvBody"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
